@@ -1,0 +1,7 @@
+@import "../../shared/stylesheets/variables";
+@import "../../shared/stylesheets/mixins";
+
+.projects {
+  min-height: 70vh;
+  background: $color-5;
+}
