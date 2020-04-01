@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  max-width: 1024px;
+  padding: $margin auto;
+
+  &--full {
+    padding: $margin;
+    max-width: auto;
+  }
+}
