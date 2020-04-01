@@ -50,7 +50,7 @@
         background: $font-color;
       }
 
-      &:hover {
+      &.is-hover:hover {
         &::after {
           left: 0;
           width: 100%;
