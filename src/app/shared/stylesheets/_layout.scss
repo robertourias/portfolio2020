@@ -1,10 +1,12 @@
 .container {
+  z-index: z("wrapper");
   width: 100%;
   max-width: 1024px;
-  padding: $margin auto;
+  padding: $margin;
+  margin: 0 auto;
 
   &--full {
     padding: $margin;
-    max-width: auto;
+    max-width: 100%;
   }
 }

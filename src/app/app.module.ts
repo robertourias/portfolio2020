@@ -57,6 +57,7 @@ import {
 }
 
 from './sections/blog/blog.component';
+import { ResumeComponent } from './sections/resume/resume.component';
 
 @NgModule( {
     declarations: [ AppComponent,
@@ -66,7 +67,8 @@ from './sections/blog/blog.component';
     ProjectsComponent,
     ServicesComponent,
     ContactComponent,
-    BlogComponent],
+    BlogComponent,
+    ResumeComponent],
     imports: [ BrowserModule],
     providers: [],
     bootstrap: [AppComponent]

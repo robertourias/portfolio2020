@@ -8,6 +8,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-weight: 300;
 }
 
 a,
@@ -15,4 +16,14 @@ input,
 textarea,
 select {
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  transition: all $transition-time ease;
+  color: $font-color;
+
+  &:hover {
+    color: $color-4;
+    text-decoration: none;
+  }
 }
