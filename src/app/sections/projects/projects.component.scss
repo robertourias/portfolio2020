@@ -2,6 +2,6 @@
 @import "../../shared/stylesheets/mixins";
 
 .projects {
-  min-height: 70vh;
-  background: $color-5;
+  margin-bottom: $margin * 2;
+  background: $color-3;
 }

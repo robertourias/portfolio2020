@@ -1,0 +1,49 @@
+@import "../../shared/stylesheets/variables";
+@import "../../shared/stylesheets/mixins";
+
+.services {
+  .subtitle {
+    margin: $margin * 3 0 $margin * 2.5;
+    font-weight: 500;
+    font-size: 2em;
+  }
+
+  .step-work {
+    line-height: 1.3;
+    font-size: 1.2em;
+    margin: $margin * 1.5 0;
+    padding-left: 110px;
+    text-align: justify;
+
+    dt {
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+
+    &.bg-responsive {
+      background: url("../../../assets/icon-responsive.webp") no-repeat center
+        left;
+      background-size: 80px;
+    }
+
+    &.bg-kanban {
+      background: url("../../../assets/icon-kanban.webp") no-repeat center left;
+      background-size: 80px;
+    }
+
+    &.bg-cut {
+      background: url("../../../assets/icon-cut.png") no-repeat center left;
+      background-size: 80px;
+    }
+
+    &.bg-code {
+      background: url("../../../assets/icon-code.webp") no-repeat center left;
+      background-size: 80px;
+    }
+
+    &.bg-seo {
+      background: url("../../../assets/icon-seo.png") no-repeat center left;
+      background-size: 80px;
+    }
+  }
+}

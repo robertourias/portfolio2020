@@ -2,11 +2,6 @@
 @import "../../shared/stylesheets/mixins";
 
 .about {
-  min-height: $heightSections;
   background: $color-2;
   color: $color-1;
-
-  .text {
-    font-size: 1.4em;
-  }
 }

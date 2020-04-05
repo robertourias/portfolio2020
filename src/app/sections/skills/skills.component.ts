@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  private skills: Array<{ name: string; color: string; value: number }>;
+  public skills: Array<{ name: string; color: string; value: number }>;
 
   constructor() {}
 

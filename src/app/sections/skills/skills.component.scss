@@ -37,7 +37,8 @@ $primary-color-span: #3c4761;
 }
 
 .skills {
-  min-height: $heightSections;
+  display: inline-block;
+  width: 100%;
   background: $color-3;
   color: $font-color;
 
