@@ -1,0 +1,162 @@
+@import "../../shared/stylesheets/variables";
+@import "../../shared/stylesheets/mixins";
+
+// VARS
+$circle-width: 0.09em;
+$circle-width-hover: 0.07em;
+
+// colors default
+$primary-color: #000000; // czarny
+$secondary-color: #dfe8ed; //szary bcg
+$bg-color: #ffffff; //srodkowy bezowy
+
+// colors customized
+$primary-color-blue: #30bae7;
+$primary-color-green: #15c7a8;
+$primary-color-orange: #eb7d4b;
+$primary-color-pink: #d74680;
+$primary-color-span: #3c4761;
+
+// CIRCLE
+// classes 2 extend
+.rect-auto {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.pie {
+  position: absolute;
+  border: $circle-width solid $primary-color;
+  width: 1 - (2 * $circle-width);
+  height: 1 - (2 * $circle-width);
+  clip: rect(0em, 0.5em, 1em, 0em);
+  border-radius: 50%;
+  transform: rotate(0deg);
+}
+
+.pie-fill {
+  transform: rotate(180deg);
+}
+
+.skills {
+  min-height: $heightSections;
+  background: $color-3;
+  color: $font-color;
+
+  .circles {
+    .circle {
+      position: relative;
+      font-size: 136px;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      float: left;
+      margin: 0.4em;
+      background-color: $secondary-color;
+
+      &:after {
+        transition: all 0.2s ease-in;
+        position: absolute;
+        top: $circle-width;
+        left: $circle-width;
+        display: block;
+        content: " ";
+        border-radius: 50%;
+        background-color: $bg-color;
+        width: 1 - (2 * $circle-width);
+        height: 1 - (2 * $circle-width);
+      }
+
+      // loop to create all needed elements automatically
+      @for $j from 51 through 100 {
+        &.p#{$j} .slice {
+          @extend .rect-auto;
+        }
+
+        &.p#{$j} .circle__bar:after {
+          @extend .pie-fill;
+        }
+
+        &.p#{$j} .circle__fill {
+          @extend .pie;
+          @extend .pie-fill;
+        }
+      }
+
+      // loop to rotate all 100 circles
+      @for $j from 1 through 100 {
+        &.p#{$j} .circle__bar {
+          transform: rotate((360/100 * $j) + deg);
+        }
+      }
+
+      &__name {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      &__value {
+        transition: all 0.2s ease-out;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 5em;
+        line-height: 5em;
+        font-size: 0.2em;
+        color: $primary-color-span;
+        display: block;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      &__slice {
+        position: absolute;
+        width: 1em;
+        height: 1em;
+        clip: rect(0em, 1em, 1em, 0.5em);
+      }
+
+      &__bar {
+        @extend .pie;
+      }
+
+      // blue
+      &.blue {
+        .circle__bar,
+        .circle__fill {
+          border-color: $primary-color-blue !important;
+        }
+      }
+
+      // pink skin
+      &.pink {
+        .circle__bar,
+        .circle__fill {
+          border-color: $primary-color-pink !important;
+        }
+      }
+
+      // green skin
+      &.green {
+        .circle__bar,
+        .circle__fill {
+          border-color: $primary-color-green !important;
+        }
+      }
+
+      // orange skin
+      &.orange {
+        .circle__bar,
+        .circle__fill {
+          border-color: $primary-color-orange !important;
+        }
+      }
+    }
+  }
+}

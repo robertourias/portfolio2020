@@ -1,0 +1,20 @@
+<section class="skills">
+  <div class="container">
+    <h2 class="skills__title">Minhas Skills</h2>
+
+    <div class="circles">
+      <div
+        *ngFor="let skill of skills"
+        class="circle"
+        [ngClass]="skill.color + ' p' + skill.value"
+      >
+        <span class="circle__name">{{ skill.name }}</span>
+        <span class="circle__value">{{ skill.value }}</span>
+        <div class="circle__slice">
+          <div class="circle__bar"></div>
+          <div class="circle__fill"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

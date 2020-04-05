@@ -1,15 +1,12 @@
 $margin: 20px;
-$font-color: rgba(255, 255, 255, 0.9);
+$heightSections: calc(100vh - 78px);
 $border-radius: 6px;
 
 $transition-time: 0.3s;
 $transition: all $transition-time ease;
 
-$color-1: #0e2042;
-$color-2: #6c8ccc;
-$color-3: #2d5fc2;
-$color-4: #232e42;
-$color-5: #21458f;
+$font-color: rgba(255, 255, 255, 0.9);
+$line-height: 1.5;
 
 $color-1: #222222;
 $color-2: #ffffff;

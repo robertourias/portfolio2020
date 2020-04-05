@@ -3,6 +3,11 @@
   outline: none;
   margin: 0;
   padding: 0;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
 }
 
 body {
@@ -16,14 +21,21 @@ input,
 textarea,
 select {
   font-family: "Roboto", sans-serif;
+  line-height: $line-height;
 }
 
 a {
   transition: all $transition-time ease;
   color: $font-color;
+  line-height: $line-height;
 
   &:hover {
     color: $color-4;
     text-decoration: none;
   }
+}
+
+p {
+  line-height: $line-height;
+  margin: 0 0 $margin;
 }

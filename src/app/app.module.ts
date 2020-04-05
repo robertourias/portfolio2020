@@ -9,6 +9,7 @@ import {
   BlogComponent,
   ResumeComponent
 } from './sections';
+import { SkillsComponent } from './sections/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {
     ProjectsComponent,
     ContactComponent,
     BlogComponent,
-    ResumeComponent
+    ResumeComponent,
+    SkillsComponent
   ],
   imports: [BrowserModule],
   providers: [ProfileService],

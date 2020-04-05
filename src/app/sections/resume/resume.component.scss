@@ -1,7 +1,7 @@
 @import "../../shared/stylesheets/variables";
 @import "../../shared/stylesheets/mixins";
 
-$width: 450px;
+$width: 600px;
 
 .resume {
   position: relative;
@@ -9,12 +9,12 @@ $width: 450px;
   align-items: center;
   justify-content: center;
   color: $font-color;
-  // background: url("../../../assets/bg-1.jpg") no-repeat bottom;
-  // background: url("../../../assets/bg-6.jpg") no-repeat center;
-  // background: url("../../../assets/bg-11.jpeg") no-repeat center;
+  background: url("../../../assets/bg-1.jpg") no-repeat bottom;
+  background: url("../../../assets/bg-6.jpg") no-repeat center;
+  background: url("../../../assets/bg-11.jpeg") no-repeat center;
   background: url("../../../assets/bg-5.jpg") no-repeat center;
   background-size: cover;
-  min-height: 75vh;
+  min-height: $heightSections;
   text-align: center;
 
   &:before {
@@ -23,18 +23,25 @@ $width: 450px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    // background: rgba(0, 0, 0, 0.4);
   }
 
   .container {
-    transition: all $transition-time ease;
-    transform: scale(0.95);
     max-width: calc(#{$width} + 100px);
     border-radius: $border-radius;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  &__thumb {
+    transition: $transition;
+    border-radius: 50%;
+    width: 100%;
+    margin-top: $margin;
+    max-width: 100px;
+    max-height: 100px;
 
     &:hover {
-      transform: scale(1);
+      transform: scale(1.4);
     }
   }
 
