@@ -39,3 +39,8 @@ p {
   line-height: $line-height;
   margin: 0 0 $margin;
 }
+
+.title {
+  font-size: 2.4em;
+  margin: $margin * 3 0 $margin * 2;
+}
