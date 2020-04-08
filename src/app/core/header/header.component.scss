@@ -3,7 +3,7 @@
 
 .header {
   background-color: $color-1;
-  z-index: z("site-header");
+  z-index: z("header");
 
   .container {
     display: flex;
