@@ -12,10 +12,23 @@ export class PortfolioService {
 
   getSkills(): Array<{name: string, score: number}> {
     const skills = [
-      { name: 'HTML 5', score: 9.5 },
-      { name: 'CSS 3', score: 9.5 },
-      { name: 'Javascript', score: 9 },
-      { name: 'Angular 9', score: 8.5 }
+      { name: 'HTML 5', score: 95 },
+      { name: 'CSS 3', score: 95 },
+      { name: 'LESS', score: 95 },
+      { name: 'SASS', score: 98 },
+      { name: 'SMACSS', score: 90 },
+      { name: 'ITCSS', score: 90 },
+      { name: 'POSTCSS', score: 90 },
+      { name: 'SASS COMPASS', score: 90 },
+      { name: 'Javascript', score: 90 },
+      { name: 'ES8', score: 90 },
+      { name: 'Gruntjs', score: 90 },
+      { name: 'Gulpjs', score: 90 },
+      { name: 'Angular 9', score: 85 },
+      { name: 'React', score: 40 },
+      { name: 'React Native', score: 30 },
+      { name: 'Node', score: 20 },
+      { name: 'JQuery', score: 95 }
     ];
 
     return skills;

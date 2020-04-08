@@ -50,7 +50,7 @@ $primary-color-span: #3c4761;
       height: 1em;
       border-radius: 50%;
       float: left;
-      margin: $margin * 3;
+      margin: $margin*2 $margin*3;
       background-color: $secondary-color;
 
       &:after {
@@ -128,6 +128,7 @@ $primary-color-span: #3c4761;
 
       // blue
       &.blue {
+
         .circle__bar,
         .circle__fill {
           border-color: $primary-color-blue !important;
@@ -136,6 +137,7 @@ $primary-color-span: #3c4761;
 
       // pink skin
       &.pink {
+
         .circle__bar,
         .circle__fill {
           border-color: $primary-color-pink !important;
@@ -143,7 +145,17 @@ $primary-color-span: #3c4761;
       }
 
       // green skin
+      &.lightgreen {
+
+        .circle__bar,
+        .circle__fill {
+          border-color: #60e352 !important;
+        }
+      }
+
+      // green skin
       &.green {
+
         .circle__bar,
         .circle__fill {
           border-color: $primary-color-green !important;
@@ -152,9 +164,28 @@ $primary-color-span: #3c4761;
 
       // orange skin
       &.orange {
+
         .circle__bar,
         .circle__fill {
           border-color: $primary-color-orange !important;
+        }
+      }
+
+      // yellow skin
+      &.yellow {
+
+        .circle__bar,
+        .circle__fill {
+          border-color: #dcf424 !important;
+        }
+      }
+
+      // purple skin
+      &.purple {
+
+        .circle__bar,
+        .circle__fill {
+          border-color: #9b15b2 !important;
         }
       }
     }
