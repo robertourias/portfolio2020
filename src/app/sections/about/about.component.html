@@ -3,16 +3,14 @@
     <h1 class="title">Muito prazer!</h1>
 
     <p class="text">
-      Meu nome é Roberto, mas todos me chamam de Beto, tenho 32 anos, moro em
-      São Paulo e trabalho como <strong>Desenvolvedor Web</strong> desde 2008 em
-      aplicações Web.
+      Meu nome é Roberto, mas todos me chamam de Beto, tenho {{ age }} anos,
+      moro em São Paulo e trabalho como <strong>Desenvolvedor Web</strong> desde
+      2008 em aplicações Web.
     </p>
 
     <p class="text">
-      Tenho conhecimento técnico em: HTML 5, CSS 3, SASS, PostCSS, SMACSS,
-      ITCSS, BEMCSS, Javascript, ES6, Node, JQuery, Angular, Typescript, React,
-      React Native (Expo), MySQL, SQL Server, SQLite (Knexjs), AWS Storage, AWS
-      Database
+      Tenho conhecimento técnico em:
+      <span *ngFor="let skill of skills"> {{ skill.name }}, </span>
     </p>
 
     <p class="text">

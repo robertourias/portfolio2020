@@ -4,9 +4,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class PortfolioService {
-  public static NAME = 'Roberto Nicoletti';
-  public static YEARSOLD = 32;
-  public static TIMEEXPERIENCE = 10;
+  static FIRSTNAME = 'Roberto';
+  static LASTNAME = 'Nicoletti';
+  static YEARSOLD = new Date().getFullYear() - 1987;
+  static TIMEEXPERIENCE = new Date().getFullYear() - 2008;
 
   constructor() { }
 
@@ -17,16 +18,23 @@ export class PortfolioService {
       { name: 'LESS', score: 95 },
       { name: 'SASS', score: 98 },
       { name: 'SMACSS', score: 90 },
+      { name: 'BEMCSS', score: 90 },
       { name: 'ITCSS', score: 90 },
       { name: 'POSTCSS', score: 90 },
       { name: 'SASS COMPASS', score: 90 },
       { name: 'Javascript', score: 90 },
       { name: 'ES8', score: 90 },
+      { name: 'Typescript', score: 90 },
       { name: 'Gruntjs', score: 90 },
       { name: 'Gulpjs', score: 90 },
       { name: 'Angular 9', score: 85 },
       { name: 'React', score: 40 },
-      { name: 'React Native', score: 30 },
+      { name: 'React Native (Expo)', score: 30 },
+      { name: 'MySQL', score: 30 },
+      { name: 'SQL Server', score: 30 },
+      { name: 'SQLite (Knexjs)', score: 30 },
+      { name: 'AWS Storage', score: 30 },
+      { name: 'AWS Database', score: 30 },
       { name: 'Node', score: 20 },
       { name: 'JQuery', score: 95 }
     ];
