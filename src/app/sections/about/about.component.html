@@ -10,7 +10,9 @@
 
     <p class="text">
       Tenho conhecimento técnico em:
-      <span *ngFor="let skill of skills"> {{ skill.name }}, </span>
+      <span *ngFor="let skill of skills; let i = index">
+        {{ skill.name }}<span *ngIf="i + 1 !== skills.length">, </span>
+      </span>
     </p>
 
     <p class="text">

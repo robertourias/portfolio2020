@@ -20,9 +20,11 @@
 
     <p class="resume__description">
       <code>
-        &#123; HTML 5, CSS 3, SASS, PostCSS, SMACSS, ITCSS, BEMCSS, Javascript,
-        ES6, Node, JQuery, Angular, Typescript, React, React Native (Expo),
-        MySQL, SQL Server, SQLite (Knexjs), AWS Storage, AWS Database &#125;
+        &#123;
+        <span *ngFor="let skill of skills; let i = index">
+          {{ skill.name }}<span *ngIf="i + 1 !== skills.length">, </span>
+        </span>
+        &#125;
       </code>
     </p>
   </div>
